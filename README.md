@@ -1,54 +1,39 @@
-**SMART TEMPERATURE AND FAN CONTROL SYSTEM**
+# SMART TEMPERATURE AND FAN CONTROL SYSTEM
 
 **PROJECT OVERVIEW**
 
-The Smart Temperature and Fan Control System is a console-based application developed using the C programming language.
-
-This project automatically controls fan speed based on the input temperature. It monitors temperature levels, adjusts fan speed, and activates an alarm during overheating conditions.
-
-The system also maintains temperature history and provides maximum, minimum, and average temperature details. All important information is stored in a CSV file for future reference.
+A console-based C application that automatically adjusts fan speed based on temperature. It monitors temperature, detects overheating, and stores temperature details in a CSV file.
 
 **FEATURES**
+- Automatic Temperature Monitoring
+- Automatic Fan Speed Control
+- System Status Display
+- Temperature History
+- Maximum, Minimum and Average Temperature
+- Overheating Detection and Alarm
+- System Reset
+- CSV File Handling
 
-- Automatic Temperature Monitoring.
-- Automatic Fan Speed Control.
-- System Status Display.
-- Temperature History.
-- Maximum Temperature.
-- Minimum Temperature.
-- Average Temperature.
-- Overheating Detection.
-- Reset System.
-- File Handling.
+**FAN SPEED CONTROL**
 
-**TEMPERATURE-BASED FAN SPEED CONTROL**
-
-The fan speed is automatically adjusted according to the temperature.
-
-| Temperature | Fan Speed | Fan Status |
-|---|---|---|
-| Below 25°C | 0% | OFF |
-| 25°C – 34°C | 30% | ON |
-| 35°C – 44°C | 60% | ON |
-| 45°C – 54°C | 80% | ON |
-| 55°C and above | 100% | ON |
-
-**OVERHEATING ALERT:** When the fan reaches 100% speed, the alarm is activated.
+| Temperature | Fan Speed |
+|---|---:|
+| Below 25°C | 0% |
+| 25°C – 34°C | 30% |
+| 35°C – 44°C | 60% |
+| 45°C – 54°C | 80% |
+| 55°C and above | 100% |
 
 **TECHNOLOGIES USED**
-
-- Programming Language: C
+- Language: C
 - Compiler: GCC
-- Data Structures: Structures and Arrays
-- Concepts: Pointers, Functions, Conditional Statements, Loops
-- String Handling: String Library Functions
-- File Handling: CSV File Operations
+- Concepts: Structures, Pointers, Arrays and Functions
+- File Handling: CSV Operations
 
 **PROJECT STRUCTURE**
 
 ```text
 Smart-Temperature-and-Fan-Control-System/
-│
 ├── main.c
 ├── smartTemp_Fan.c
 ├── smartTemp_Fan.h
@@ -56,42 +41,9 @@ Smart-Temperature-and-Fan-Control-System/
 └── README.md
 ```
 
-**MAIN MENU**
-
-```text
-=== SMART TEMPERATURE AND FAN CONTROL SYSTEM ===
-
-1. Enter Temperature (Automatic Mode)
-2. Display System Status
-3. View Temperature History
-4. Show Maximum Temperature
-5. Show Minimum Temperature
-6. Show Average Temperature
-7. Over Heating Events
-8. Reset The System
-9. Save and Exit
-```
-
-**DATA STORAGE**
-
-The project uses `database.csv` to store:
-
-- Current temperature
-- Fan speed
-- Temperature history count
-- Overheating event count
-- Fan status
-- Alarm status
-- Previous temperature readings
-
-The saved information is loaded automatically when the application starts.
-
 **LEARNING OUTCOMES**
-
-- Implementing real-time style temperature monitoring through user input.
-- Developing automatic fan speed control logic.
-- Working with structures and pointers.
-- Implementing functions and modular programming.
-- Managing temperature history using arrays.
-- Applying file handling concepts in C.
-- Developing condition-based decision-making logic.
+- Developed automatic fan control logic.
+- Practiced structures, pointers and arrays.
+- Improved modular programming skills.
+- Implemented temperature history management.
+- Learned CSV file handling in C.
