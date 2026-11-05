@@ -1,6 +1,6 @@
-SMART TEMPERATURE AND FAN CONTROL SYSTEM
+**SMART TEMPERATURE AND FAN CONTROL SYSTEM**
 
-PROJECT OVERVIEW
+**PROJECT OVERVIEW**
 
 The Smart Temperature and Fan Control System is a console-based application developed using the C programming language.
 
@@ -8,7 +8,7 @@ This project automatically controls fan speed based on the input temperature. It
 
 The system also maintains temperature history and provides maximum, minimum, and average temperature details. All important information is stored in a CSV file for future reference.
 
-FEATURES
+**FEATURES**
 
 - Automatic Temperature Monitoring.
 - Automatic Fan Speed Control.
@@ -21,21 +21,21 @@ FEATURES
 - Reset System.
 - File Handling.
 
-TEMPERATURE-BASED FAN SPEED CONTROL
+**TEMPERATURE-BASED FAN SPEED CONTROL**
 
 The fan speed is automatically adjusted according to the temperature.
 
 | Temperature | Fan Speed | Fan Status |
-
+|---|---|---|
 | Below 25°C | 0% | OFF |
 | 25°C – 34°C | 30% | ON |
 | 35°C – 44°C | 60% | ON |
 | 45°C – 54°C | 80% | ON |
 | 55°C and above | 100% | ON |
 
-OVERHEATING ALERT: When the fan reaches 100% speed, the alarm is activated.
+**OVERHEATING ALERT:** When the fan reaches 100% speed, the alarm is activated.
 
-TECHNOLOGIES USED
+**TECHNOLOGIES USED**
 
 - Programming Language: C
 - Compiler: GCC
@@ -44,8 +44,9 @@ TECHNOLOGIES USED
 - String Handling: String Library Functions
 - File Handling: CSV File Operations
 
-PROJECT STRUCTURE
+**PROJECT STRUCTURE**
 
+```text
 Smart-Temperature-and-Fan-Control-System/
 │
 ├── main.c
@@ -55,8 +56,9 @@ Smart-Temperature-and-Fan-Control-System/
 └── README.md
 ```
 
-MAIN MENU
+**MAIN MENU**
 
+```text
 === SMART TEMPERATURE AND FAN CONTROL SYSTEM ===
 
 1. Enter Temperature (Automatic Mode)
@@ -68,8 +70,9 @@ MAIN MENU
 7. Over Heating Events
 8. Reset The System
 9. Save and Exit
+```
 
-DATA STORAGE
+**DATA STORAGE**
 
 The project uses `database.csv` to store:
 
@@ -83,7 +86,7 @@ The project uses `database.csv` to store:
 
 The saved information is loaded automatically when the application starts.
 
-LEARNING OUTCOMES
+**LEARNING OUTCOMES**
 
 - Implementing real-time style temperature monitoring through user input.
 - Developing automatic fan speed control logic.
